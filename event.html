@@ -1,0 +1,35 @@
+<style>
+button{background-color:red; color:white; border:1px solid black;}
+button:hover{background-color:blue; color:black; border:1px solid black;}
+b{background-color:black; color:white}
+</style>
+<pre>
+<center><pre><b>[<span id="count-up">0:00</span>]</b>
+
+
+
+<button id="button">O</button>
+<script>
+	  var min    = 0;
+      var second = 00;
+      var zeroPlaceholder = 0;
+      var counterId = setInterval(function(){
+                        countUp();
+                      }, 1000);
+
+      function countUp () {
+          second++;
+          if(second == 59){
+            second = 00;
+            min = min + 1;
+          }
+          if(second == 10){
+              zeroPlaceholder = '';
+          }else
+          if(second == 00){
+              zeroPlaceholder = 0;       
+}
+
+          document.getElementById("count-up").innerText = min+':'+zeroPlaceholder+second;
+      }
+</script>
