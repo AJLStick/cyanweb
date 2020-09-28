@@ -2,6 +2,7 @@
   <head>
 <title>_pages</title>
 <style>
+#spam{display:none;}
 a{color:orange;}
 ttl{font-size:24px;}
 cy{color:cyan;}
@@ -24,7 +25,7 @@ color:grey;
 <pre><b><ttl><center>
 <font size=10><cy>web</cy><or>reviews</or></ttl></b></font>
 ---
-\/ (<gr>top positive review</gr>) \/
+<rating>\/ (<gr>top positive reviews</gr>) \/</rating>
 <review><b>          <bl>RATING:</bl>[<ye>☆☆☆☆</ye><gre>☆</gre></ye>]          
 Jebodiah Akins
 <or>one small problem</or>
@@ -32,33 +33,62 @@ Jebodiah Akins
 claims! if only it could cure 
 my burstitis, that would be
 deserving of a five-star review!
+never in my life have i ever seen
+such a well manufactured, practical
+item.
+
+</review>     <review><b>          <bl>RATING:</bl>[<ye>☆☆☆☆☆</ye>]          
+Shelby S.
+<or>i'm in the hospital now, but...</or>
+</b>i was happy to finally find a
+product like this that would serve
+my purposes, but i opened it and
+a large, hairy arm reached out,
+grabbed me by the neck, and flung 
+me across the room!
+but otherwise, great product.
 
 </review>
 
 
 
-
-\/ (<re>top critical review</re>) \/
+\/ (<re>top critical review</re>) \/                                          
 <review><b>          <bl>RATING:</bl>[<ye>☆</ye><gre>☆☆☆☆</gre>]          
 Elizabeth Fungamei
-<or>how dare you?!</or>
+<or>DO NOT BUY!!!</or>
 </b>bought this, believing I would get 
 what i ordered, but when i opened
 the package, i got snake oil!
 literal <i>snake oil!</i> WHAT AM I
 SUPPOSED TO DO WITH FU <a href="">read more...</a>
 
-</review>
-
-
-
-
-
-<review><b>          <bl>RATING:</bl>[<ye>☆☆☆☆☆</ye>]          
+</review>     <review><b>          <bl>RATING:</bl>[<ye>☆☆☆☆☆</ye>]          
 Unknown
 <or>amazing product good good yes</or>
 </b>this product good for skin and
 cure for blindness, is very good
 i give 5 of the five stars
 
+
+
+</review>
+
+<script>
+function hideshow() {
+  var x = document.getElementById("spam");
+  if (x.style.display === "none") {
+    x.style.display = "inline-block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+the following review has been marked as spam.<button onclick="hideshow()">show</button>
+<review id="spam"><b>          <bl>RATING:</bl>[<ye>☆☆☆☆☆</ye>]          
+Krinn
+<or>FINALLY!</or>
+</b>i have invaded another part
+of AJLStick's site! now i can
+initiate phase two of my plan!
+first, i'll... <a href="">read more...</a>
 </review>
